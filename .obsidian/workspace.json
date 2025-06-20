@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/Integrating Trigonometric.md",
+                "file": "Calculus/Trigonometric.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Integrating Trigonometric"
+              "title": "Trigonometric"
             }
           },
           {
@@ -221,13 +221,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "87ecaf35db170c24",
+  "active": "cda75767bad6852c",
   "lastOpenFiles": [
     "Calculus/极坐标、柱面坐标积分.md",
     "多元微积分.md",
     "Calculus/Symbol Glossary.md",
     "Welcome.md",
-    "Calculus/Integrating Trigonometric.md",
+    "Calculus/Trigonometric.md",
     "Calculus/格林、高斯、斯托克斯、通量、旋度.md",
     "Calculus/答案为“0”.md",
     "Calculus/梯度.md",
