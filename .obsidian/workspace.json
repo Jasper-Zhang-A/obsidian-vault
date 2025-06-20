@@ -190,6 +190,20 @@
             }
           },
           {
+            "id": "c74e7f23959b64c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
+            }
+          },
+          {
             "id": "e4414978c24ca76e",
             "type": "leaf",
             "state": {
@@ -204,7 +218,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -361,10 +375,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5b16ac1b424f8190",
+  "active": "c74e7f23959b64c5",
   "lastOpenFiles": [
-    "Calculus/格林、高斯、斯托克斯、通量、旋度.md",
     "Calculus/Integrating Trigonometric.md",
+    "Untitled 1.md",
+    "Calculus/格林、高斯、斯托克斯、通量、旋度.md",
     "Calculus/答案为“0”.md",
     "Calculus/梯度.md",
     "Untitled.md",
