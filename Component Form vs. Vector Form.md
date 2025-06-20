@@ -2,7 +2,7 @@
 
 ### The Question
 
-Find the circulation of the vector field $\vec{F}=(x^{2}+y)\vec{i}+(x+y)\vec{j}+(4y^{2}-z)\vec{k}$ around the circle C in which the plane $z=-y$ meets the sphere $x^{2}+y^{2}+z^{2}=4$, counterclockwise as viewed from above. 
+>Find the circulation of the vector field $\vec{F}=(x^{2}+y)\vec{i}+(x+y)\vec{j}+(4y^{2}-z)\vec{k}$ around the circle C in which the plane $z=-y$ meets the sphere $x^{2}+y^{2}+z^{2}=4$, counterclockwise as viewed from above. 
 
 ---
 
