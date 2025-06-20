@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "可微、连续、可偏导.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "可微、连续、可偏导"
             }
           },
           {
@@ -237,9 +237,10 @@
   },
   "active": "fdd42c3818fadfdd",
   "lastOpenFiles": [
+    "Pasted image 20250620215346.png",
     "Pasted image 20250620214304.png",
     "Calculus/Trigonometric.md",
-    "Untitled 1.md",
+    "可微、连续、可偏导.md",
     "Calculus/极坐标、柱面坐标积分.md",
     "多元微积分.md",
     "Calculus/Symbol Glossary.md",
