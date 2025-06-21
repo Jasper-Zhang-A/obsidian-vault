@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calculus/格林、高斯、斯托克斯、通量、旋度.md",
+                "file": "隐函数求导.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "格林、高斯、斯托克斯、通量、旋度"
+              "title": "隐函数求导"
             }
           },
           {
@@ -293,6 +293,7 @@
   },
   "active": "b7ee26defd2b7401",
   "lastOpenFiles": [
+    "Calculus/格林、高斯、斯托克斯、通量、旋度.md",
     "参数化曲面的面积与积分.md",
     "曲面积分.md",
     "Untitled.md",
@@ -306,7 +307,6 @@
     "Calculus/Trigonometric.md",
     "Calculus/Symbol Glossary.md",
     "Welcome.md",
-    "Calculus/格林、高斯、斯托克斯、通量、旋度.md",
     "Calculus/答案为“0”.md",
     "Calculus/梯度.md",
     "Calculus/Mismatch form a proper cross product determinant with a 2-component vector.md",
