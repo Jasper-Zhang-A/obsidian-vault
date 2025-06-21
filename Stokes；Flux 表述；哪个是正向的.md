@@ -1,3 +1,7 @@
+---
+share_link: https://share.note.sx/0an5q8vo#YccF3JRgBF+bIVgPieEdZvhGoB62m0tf32sAkPGULOI
+share_updated: 2025-06-21T17:56:46+08:00
+---
 # Case Study: Stokes' Theorem (2022 Exam, Q4) / 斯托克斯定理解析 (最终完整版)
 
 > [!question] Problem Statement
@@ -99,3 +103,39 @@ $$ = \frac{1}{2} \left[ -\frac{1}{4}(3\pi + \pi) - \frac{1}{2}(2\pi) + 0 \right]
 
 **最终结论**:
 两种方法都得到了相同的结果 $-\pi$。
+
+---
+
+## Part 2: How to Determine the Orientation? (如何判断方向正负？)
+
+“正”和“负”方向是相对的，它取决于我们如何定义曲面。在考试中，主要有两种情况。
+
+### 1. 曲面由函数 $z=f(x,y)$ 定义 (如此题)
+
+这种情况最常见。我们通常将这个方程改写为 $G(x,y,z) = z - f(x,y) = 0$。
+
+* **法向量的计算**: 法向量总是与梯度 $\nabla G$ 平行。
+    $$ \nabla G = \langle -\frac{\partial f}{\partial x}, -\frac{\partial f}{\partial y}, 1 \rangle $$
+* **判断正负方向**:
+    * `✅` **向上 / 正向 (Upward / Positive Orientation)**:
+        就是梯度 $\nabla G$ 本身的方向，因为它的k分量恒为 `+1`。
+        对于本题 $f(x,y)=x^2+4y^2$，向上的法向量是 $\vec{n}_{up} = \langle -2x, -8y, 1 \rangle$。
+    * `❌` **向下 / 负向 (Downward / Negative Orientation)**:
+        就是梯度 $\nabla G$ 的反方向 $-\nabla G$。
+        $$ -\nabla G = \langle \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, -1 \rangle $$
+        它的k分量恒为 `-1`。对于本题，向下的法向量是 $\vec{n}_{down} = \langle 2x, 8y, -1 \rangle$。
+
+> [!faq]- 如何应对题目指令？
+> 你只需要严格遵守题目的文字描述：
+> * 如果题目说 **"positive k-component"** 或 **"upward"**，你就选择 $\vec{n}_{up}$。
+> * 如果题目说 **"negative k-component"** 或 **"downward"**，你就选择 $\vec{n}_{down}$。
+> * (本题中的 "inner normal" 是一个不严谨的描述，我们应以更精确的 "positive k-component" 为准。)
+
+### 2. 曲面是一个封闭面 (Closed Surface)
+
+对于像球面、立方体这样的封闭曲面，方向的定义更直观。
+
+* `✅` **正向 (Positive Orientation)**: 指的是**向外 (outward)** 的法向量，即从实体区域内部指向外部。
+* `❌` **负向 (Negative Orientation)**: 指的是**向内 (inward)** 的法向量。
+
+在解题时，除非题目特别说明，我们默认的“通量”都是指**正向（向外）通量**。
