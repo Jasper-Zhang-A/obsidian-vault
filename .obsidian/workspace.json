@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled 1.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "Untitled"
             }
           },
           {
@@ -259,24 +259,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3dfbdc5f0bc2886",
+  "active": "5b16ac1b424f8190",
   "lastOpenFiles": [
-    "取正还是取负.md",
     "Untitled 1.md",
-    "参数化曲面的面积与积分.md",
+    "Untitled.md",
+    "Pasted image 20250620215346.png",
+    "大总结.md",
+    "Calculus/格林、高斯、斯托克斯、闭合通量、旋度.md",
     "曲面积分.md",
+    "取正还是取负.md",
+    "参数化曲面的面积与积分.md",
     "Calculus/极坐标、柱面坐标积分.md",
     "可微、连续、可偏导.md",
     "隐函数求导.md",
     "链式法则.md",
-    "大总结.md",
     "多元微积分.md",
     "Calculus/线积分.md",
     "Calculus/偏导数的计算（包括用定义法求解特殊点），函数的连续性判断，以及偏导数存在与连续性之间的关系.md",
-    "Calculus/格林、高斯、斯托克斯、通量、旋度.md",
-    "Untitled.md",
     "Pasted image 20250620214304.png",
-    "Pasted image 20250620215346.png",
     "Calculus/Trigonometric.md",
     "Calculus/Symbol Glossary.md",
     "Welcome.md",
