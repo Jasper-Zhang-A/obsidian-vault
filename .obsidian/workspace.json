@@ -8,76 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fdd42c3818fadfdd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "参数化曲面的面积与积分.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "参数化曲面的面积与积分"
-            }
-          },
-          {
-            "id": "905c5ae447c9b94f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 1"
-            }
-          },
-          {
-            "id": "8698190fb5d0fc4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "隐函数求导.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "隐函数求导"
-            }
-          },
-          {
-            "id": "b7ee26defd2b7401",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Stokes；Flux 表述；哪个是正向的.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Stokes；Flux 表述；哪个是正向的"
-            }
-          },
-          {
-            "id": "672543eaf9955726",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "取正还是取负.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "取正还是取负"
-            }
-          },
-          {
             "id": "6084d3c8369be416",
             "type": "leaf",
             "state": {
@@ -130,35 +60,21 @@
             }
           },
           {
-            "id": "e4414978c24ca76e",
+            "id": "593cdd0444bf6289",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "曲面积分.md",
+                "file": "吴柯.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "曲面积分"
-            }
-          },
-          {
-            "id": "ab62cffd8d3cd1bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "吴柯"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -215,7 +131,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -315,23 +232,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "905c5ae447c9b94f",
+  "active": "593cdd0444bf6289",
   "lastOpenFiles": [
-    "参数化曲面的面积与积分.md",
-    "Untitled 1.md",
-    "曲面积分.md",
-    "Untitled.md",
-    "Calculus/Untitled",
     "Case Study-Flux.md",
-    "Calculus/Symbol Glossary.md",
     "取正还是取负.md",
+    "Stokes；Flux 表述；哪个是正向的.md",
+    "隐函数求导.md",
     "大总结.md",
+    "吴柯.md",
+    "Untitled.md",
+    "参数化曲面的面积与积分.md",
+    "梯度法 vs. 参数法.md",
+    "曲面积分.md",
+    "Calculus/Untitled",
+    "Calculus/Symbol Glossary.md",
     "Calculus/格林、高斯、斯托克斯、闭合通量、旋度.md",
     "Calculus/Gauss's Divergence Theorem.md",
     "可微、连续、可偏导.md",
     "路径证明的普适性.md",
-    "Stokes；Flux 表述；哪个是正向的.md",
-    "隐函数求导.md",
     "Calculus/Mismatch form a proper cross product determinant with a 2-component vector.md",
     "Pasted image 20250620215346.png",
     "Calculus/极坐标、柱面坐标积分.md",
@@ -346,7 +264,6 @@
     "Calculus/梯度.md",
     "AI Prompt/Gemini 2 Obsidian.md",
     "AI Prompt",
-    "Calculus/Stokes' Theorem.md",
     "Calculus"
   ]
 }
