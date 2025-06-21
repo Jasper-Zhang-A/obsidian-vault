@@ -1,6 +1,6 @@
 ---
 share_link: https://share.note.sx/0an5q8vo#YccF3JRgBF+bIVgPieEdZvhGoB62m0tf32sAkPGULOI
-share_updated: 2025-06-21T17:56:46+08:00
+share_updated: 2025-06-21T17:59:24+08:00
 ---
 # Case Study: Stokes' Theorem (2022 Exam, Q4) / 斯托克斯定理解析 (最终完整版)
 
@@ -139,3 +139,4 @@ $$ = \frac{1}{2} \left[ -\frac{1}{4}(3\pi + \pi) - \frac{1}{2}(2\pi) + 0 \right]
 * `❌` **负向 (Negative Orientation)**: 指的是**向内 (inward)** 的法向量。
 
 在解题时，除非题目特别说明，我们默认的“通量”都是指**正向（向外）通量**。
+[[取正还是取负]]
