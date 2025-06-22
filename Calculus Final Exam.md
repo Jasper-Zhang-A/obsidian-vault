@@ -316,3 +316,85 @@ $$ \text{Area}(D_1) = \int_{-1}^{1} \sqrt{2-x^2} \,dx - \int_{-1}^{1} x^2 \,dx $
 
 
 
+## Q4: Integration in Vector Fields (Corrected Analysis)
+
+### Part (a): Surface Integral of a Scalar Function
+
+> [!question] Problem Statement
+> Compute the surface integral $\iint_S y \, d\sigma$, where $S$ is the portion of the cylindrical surface $x^2+y^2=4$ in the first octant ($x>0, y>0, z>0$) and bounded by the planes $z=0$, $z=x$, and $x=1$.
+
+> [!faq]- 关于积分区域的重新讨论 (Re-discussion on the Integration Region)
+> 
+> **您的观点是对的**。题目中“bounded by the plane $x=1$”的表述存在歧义。
+> * 我之前的理解是 $x \ge 1$ 的部分，这不太符合一般出题习惯。
+> * 您的理解是 $x \le 1$ 的部分，即由 $x=0$ (y-z平面) 和 $x=1$ 所围住的区域，这是更标准、更合理的解释。
+> 
+> 我们现在按照您提出的、更标准的理解，即 **$0 \le x \le 1$** 的区域，来重新确定积分限并计算。
+
+**1. 参数化曲面 $S$ (Parameterize the Surface)**
+我们依然使用柱面坐标参数化曲面：
+$$ \vec{r}(\theta, z) = (2\cos\theta)\vec{i} + (2\sin\theta)\vec{j} + z\vec{k} $$
+面积元经计算仍为 $d\sigma = 2 \,d\theta\,dz$。
+
+**2. 重新确定参数范围 (Re-determine the Limits)**
+* **$\theta$的范围**: 根据我们新的理解，区域在第一象限，且 $0 \le x \le 1$。
+    * 当 $x=0$ 时，$0=2\cos\theta \implies \theta = \pi/2$。
+    * 当 $x=1$ 时，$1=2\cos\theta \implies \cos\theta=1/2 \implies \theta=\pi/3$。
+    * 因此，角度 $\theta$ 的范围是 **$\pi/3 \le \theta \le \pi/2$**。
+* **$z$的范围**: 保持不变，$0 \le z \le x = 2\cos\theta$。
+
+**3. 重新计算积分 (Re-evaluate the Integral)**
+$$ \iint_S y \, d\sigma = \int_{\pi/3}^{\pi/2} \int_{0}^{2\cos\theta} (2\sin\theta) \cdot (2 \,dz\,d\theta) $$
+$$ = \int_{\pi/3}^{\pi/2} \int_{0}^{2\cos\theta} 4\sin\theta \,dz\,d\theta $$
+* **先对 $z$ 积分**:
+    $$ \int_{0}^{2\cos\theta} 4\sin\theta \,dz = 4\sin\theta [z]_{z=0}^{z=2\cos\theta} = 8\sin\theta\cos\theta = 4\sin(2\theta) $$
+* **再对 $\theta$ 积分**:
+    $$ \int_{\pi/3}^{\pi/2} 4\sin(2\theta) \,d\theta = [-2\cos(2\theta)]_{\pi/3}^{\pi/2} $$
+    $$ = (-2\cos(\pi)) - (-2\cos(2\pi/3)) $$
+    $$ = (-2)(-1) - (-2)(-\frac{1}{2}) = 2 - 1 = 1 $$
+
+### Part (b): Line Integral Minimization (Corrected)
+
+> [!question] Problem Statement
+> Find the value of $a > 0$ such that the integral $\int_L (1+y^3)dx + (2x+y)dy$ takes its minimum value, where $L$ is the curve $y = a\sin x$ from the point O(0,0) to the point A($\pi$,0).
+
+> [!warning]
+> 我之前的回答中看错了题目中的 $y$ 的幂次，这里根据正确的 $1+y^3$ 和 $2x+y$ 进行重新计算。
+
+**1. 参数化路径 $L$**
+令 $x=t$，则 $y=a\sin t$。
+$$ \vec{r}(t) = \langle t, a\sin t \rangle, \quad t \in [0, \pi] $$
+
+**2. 计算线积分**
+线积分 $\int_L M\,dx + N\,dy$。
+* $M = 1+y^3 = 1+a^3\sin^3t$
+* $N = 2x+y = 2t+a\sin t$
+* $dx = dt$
+* $dy = a\cos t \,dt$
+代入积分，得到积分值 $I(a)$：
+$$ I(a) = \int_{0}^{\pi} \left[ (1+a^3\sin^3t)dt + (2t+a\sin t)(a\cos t \,dt) \right] $$
+$$ = \int_{0}^{\pi} (1 + a^3\sin^3t + 2at\cos t + a^2\sin t\cos t) \,dt $$
+我们分项积分：
+* $\int_0^\pi 1 \,dt = \pi$
+* $\int_0^\pi 2at\cos t \,dt = -4a$  (此项与上次计算相同)
+* $\int_0^\pi a^2\sin t\cos t \,dt = \frac{a^2}{2} \int_0^\pi \sin(2t) \,dt = 0$
+* **计算新的一项**: $\int_0^\pi a^3\sin^3t \,dt$。
+    我们知道 $\sin^3t = \sin t(1-\cos^2t) = \sin t - \sin t\cos^2t$。
+    $$ \int (\sin t - \sin t\cos^2t) dt = -\cos t + \frac{\cos^3t}{3} $$
+    $$ a^3 \left[ -\cos t + \frac{\cos^3t}{3} \right]_0^\pi = a^3 \left[ \left(-(-1) + \frac{(-1)^3}{3}\right) - \left(-1 + \frac{1^3}{3}\right) \right] $$
+    $$ = a^3 \left[ \left(1 - \frac{1}{3}\right) - \left(- \frac{2}{3}\right) \right] = a^3 \left( \frac{2}{3} + \frac{2}{3} \right) = \frac{4}{3}a^3 $$
+
+将各项结果相加，得到积分值 $I(a)$：
+$$ I(a) = \frac{4}{3}a^3 - 4a + \pi $$
+
+**3. 求 $I(a)$ 的最小值**
+对 $I(a)$ 关于 $a$ 求导，并令其为0。
+$$ I'(a) = \frac{d}{da}\left(\frac{4}{3}a^3 - 4a + \pi\right) = 4a^2 - 4 $$
+令 $I'(a) = 0$：
+$$ 4a^2 - 4 = 0 \implies a^2 = 1 $$
+因为题目要求 $a>0$，所以 $a=1$。
+(二阶导数 $I''(a) = 8a$，当 $a=1$ 时为正，确认是最小值点。)
+
+**最终答案 (Corrected):**
+(a) 1
+(b) $a = 1$
