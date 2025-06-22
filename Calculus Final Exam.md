@@ -242,3 +242,77 @@ $$ \text{Area}(D_1) = \int_{-1}^{1} (y_{\text{upper}} - y_{\text{lower}}) \,dx =
 * 圆的总面积是 $\pi(\sqrt{2})^2 = 2\pi$。
 * $\text{Area}(D_2) = \text{Total Area} - \text{Area}(D_1) = 2\pi - (\frac{\pi}{2}+\frac{1}{3}) = \frac{3\pi}{2} - \frac{1}{3}$。
 * $I = \text{Area}(D_1) - \text{Area}(D_2) = (\frac{\pi}{2}+\frac{1}{3}) - (\frac{3\pi}{2}-\frac{1}{3}) = -\pi + \frac{2}{3}$。
+
+
+> [!tip] My Original Idea / 我的想法：用对称性来做
+> 
+> 我的思路是利用对称性。我知道 `sgn` 函数会把积分区域分成三块：$y>x^2$（值为+1），$y<x^2$（值为-1），以及 $y=x^2$（值为0）。
+> 
+> 所以，整个积分就等于 **(上方区域的面积) 减去 (下方区域的面积)**。
+> 
+> 这个思路是完全正确的！这道题的本质就是一个几何问题，而不是一个复杂的函数积分问题。如果在计算中出错了，问题一定出在计算面积的环节。
+
+---
+
+## Correct Solution: The Area Subtraction Method / 正确解法：面积相减法
+
+### Step 1: Deconstruct the Integral (解构积分)
+
+根据符号函数 `sgn` 的定义，我们可以把原积分拆解为：
+$$ I = \iint_{y>x^2, D} (1) \,dA + \iint_{y<x^2, D} (-1) \,dA + \iint_{y=x^2, D} (0) \,dA $$
+其中 $D$ 是半径为 $\sqrt{2}$ 的圆盘。
+由于在一条线上积分为0，上式可以简化为：
+$$ I = \text{Area}(D_1) - \text{Area}(D_2) $$
+* $D_1$: 圆盘内，且在抛物线 $y=x^2$ **上方**的区域。
+* $D_2$: 圆盘内，且在抛物线 $y=x^2$ **下方**的区域。
+
+### Step 2: Find the Intersection Points (寻找交点)
+
+为了计算面积，我们首先需要找到抛物线 $y=x^2$ 和圆 $x^2+y^2=2$ 的交点。
+将 $x^2=y$ 代入圆的方程：
+$$ y + y^2 = 2 \implies y^2+y-2=0 $$
+因式分解得到：
+$$ (y+2)(y-1)=0 $$
+因为 $y=x^2 \ge 0$，所以我们只取 $y=1$。
+当 $y=1$ 时，$x^2=1 \implies x=\pm 1$。
+所以，交点是 **$(-1,1)$** 和 **$(1,1)$**。
+
+### Step 3: Calculate the Area of the Upper Region $D_1$ (计算上方区域面积)
+
+区域 $D_1$ 的面积可以通过定积分计算，其上边界是圆 $y=\sqrt{2-x^2}$，下边界是抛物线 $y=x^2$。
+$$ \text{Area}(D_1) = \int_{-1}^{1} (y_{\text{upper}} - y_{\text{lower}}) \,dx = \int_{-1}^{1} (\sqrt{2-x^2} - x^2) \,dx $$
+我们将这个积分拆成两部分来计算：
+$$ \text{Area}(D_1) = \int_{-1}^{1} \sqrt{2-x^2} \,dx - \int_{-1}^{1} x^2 \,dx $$
+
+* **计算第二部分 (抛物线下的面积)**:
+    $$ \int_{-1}^{1} x^2 \,dx = \left[ \frac{x^3}{3} \right]_{-1}^{1} = \frac{1}{3} - (-\frac{1}{3}) = \frac{2}{3} $$
+
+* **计算第一部分 (圆弧下的面积)**:
+> [!faq]- 如何计算 $\int_{-1}^{1} \sqrt{2-x^2} \,dx$ ？
+    > 
+    > 这个积分需要使用**三角代换 (Trigonometric Substitution)**。
+    > 令 $x = \sqrt{2}\sin\theta$，则 $dx = \sqrt{2}\cos\theta \,d\theta$。
+    > 变换积分限：
+    > * 当 $x=1$ 时, $\sin\theta = 1/\sqrt{2} \implies \theta = \pi/4$。
+    > * 当 $x=-1$ 时, $\sin\theta = -1/\sqrt{2} \implies \theta = -\pi/4$。
+    > 
+    > $$ \int_{-\pi/4}^{\pi/4} \sqrt{2 - 2\sin^2\theta} \cdot (\sqrt{2}\cos\theta) \,d\theta $$
+    > $$ = \int_{-\pi/4}^{\pi/4} \sqrt{2\cos^2\theta} \cdot (\sqrt{2}\cos\theta) \,d\theta = \int_{-\pi/4}^{\pi/4} 2\cos^2\theta \,d\theta $$
+    > 使用半角公式 $2\cos^2\theta = 1+\cos(2\theta)$:
+    > $$ = \int_{-\pi/4}^{\pi/4} (1+\cos(2\theta)) \,d\theta = \left[ \theta + \frac{1}{2}\sin(2\theta) \right]_{-\pi/4}^{\pi/4} $$
+    > $$ = \left(\frac{\pi}{4} + \frac{1}{2}\sin(\frac{\pi}{2})\right) - \left(-\frac{\pi}{4} + \frac{1}{2}\sin(-\frac{\pi}{2})\right) $$
+    > $$ = \left(\frac{\pi}{4} + \frac{1}{2}\right) - \left(-\frac{\pi}{4} - \frac{1}{2}\right) = \frac{\pi}{2} + 1 $$
+* **组合得到 $\text{Area}(D_1)$**:
+    $$ \text{Area}(D_1) = \left(\frac{\pi}{2} + 1\right) - \frac{2}{3} = \frac{\pi}{2} + \frac{1}{3} $$
+
+### Step 4: Calculate the Final Integral Value (计算最终结果)
+
+* **圆盘总面积**: $A_{total} = \pi r^2 = \pi (\sqrt{2})^2 = 2\pi$。
+* **下方区域面积**: $\text{Area}(D_2) = A_{total} - \text{Area}(D_1) = 2\pi - \left(\frac{\pi}{2} + \frac{1}{3}\right) = \frac{3\pi}{2} - \frac{1}{3}$。
+* **最终积分值**:
+    $$ I = \text{Area}(D_1) - \text{Area}(D_2) = \left(\frac{\pi}{2} + \frac{1}{3}\right) - \left(\frac{3\pi}{2} - \frac{1}{3}\right) $$
+    $$ = \frac{\pi}{2} - \frac{3\pi}{2} + \frac{1}{3} + \frac{1}{3} = -\pi + \frac{2}{3} $$
+
+
+
+
