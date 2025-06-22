@@ -280,15 +280,15 @@
         "y": 0,
         "width": 960,
         "height": 1032,
-        "maximize": false,
+        "maximize": true,
         "zoom": 0
       }
     ]
   },
-  "active": "593cdd0444bf6289",
+  "active": "2805f12e8f49999f",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "Calculus/格林、高斯、斯托克斯、闭合通量、旋度.md",
+    "Untitled 1.md",
     "吴柯.md",
     "Case Study-Flux.md",
     "取正还是取负.md",
