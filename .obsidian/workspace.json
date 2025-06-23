@@ -91,10 +91,14 @@
             "id": "c2cea5d2fe823c20",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
             }
           },
           {
@@ -269,8 +273,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c2cea5d2fe823c20",
+  "active": "5b16ac1b424f8190",
   "lastOpenFiles": [
+    "Linear Algebra",
     "Untitled.md",
     "Calculus/梯度.md",
     "Calculus/大总结.md",
@@ -292,14 +297,13 @@
     "Calculus/可微、连续、可偏导.md",
     "Calculus/路径证明的普适性.md",
     "Calculus/Mismatch form a proper cross product determinant with a 2-component vector.md",
-    "Pasted image 20250620215346.png",
+    "Calculus/Pasted image 20250620215346.png",
     "Calculus/极坐标、柱面坐标积分.md",
     "Calculus/链式法则.md",
     "多元微积分.md",
     "Calculus/线积分.md",
     "Calculus/偏导数的计算（包括用定义法求解特殊点），函数的连续性判断，以及偏导数存在与连续性之间的关系.md",
     "Pasted image 20250620214304.png",
-    "Calculus/Trigonometric.md",
     "AI Prompt",
     "Calculus"
   ]
