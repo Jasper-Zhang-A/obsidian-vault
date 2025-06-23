@@ -65,26 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "求对称矩阵的正交对角化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
-            }
-          },
-          {
-            "id": "239e8b93f60a37eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "二次型化标准形.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "二次型化标准形"
+              "title": "求对称矩阵的正交对角化"
             }
           },
           {
@@ -93,12 +79,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "终极解析—二次型与对称矩阵对角化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "终极解析—二次型与对称矩阵对角化"
             }
           },
           {
@@ -116,7 +102,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -173,8 +159,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -274,12 +259,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cda75767bad6852c",
+  "active": "3893a0716b4f50d6",
   "lastOpenFiles": [
-    "正交性、对称矩阵与二次型.md",
     "二次型化标准形.md",
     "求对称矩阵的正交对角化.md",
-    "Untitled.md",
+    "终极解析—二次型与对称矩阵对角化.md",
+    "正交性、对称矩阵与二次型.md",
     "Calculus/链式法则.md",
     "线性代数期末复习指南.md",
     "正交投影计算.md",
