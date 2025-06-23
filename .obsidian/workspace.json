@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "正交性、对称矩阵与二次型.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "正交性、对称矩阵与二次型"
+              "title": "Untitled"
             }
           },
           {
@@ -173,7 +173,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -273,12 +274,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3591bef38f94cdee",
+  "active": "cda75767bad6852c",
   "lastOpenFiles": [
-    "二次型化标准形.md",
-    "Untitled.md",
-    "求对称矩阵的正交对角化.md",
     "正交性、对称矩阵与二次型.md",
+    "二次型化标准形.md",
+    "求对称矩阵的正交对角化.md",
+    "Untitled.md",
     "Calculus/链式法则.md",
     "线性代数期末复习指南.md",
     "正交投影计算.md",
