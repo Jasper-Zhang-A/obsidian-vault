@@ -50,6 +50,20 @@
             }
           },
           {
+            "id": "453623b80f591664",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
             "id": "79ba59de768a3059",
             "type": "leaf",
             "state": {
@@ -60,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -217,10 +231,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a50edbc6a3846be1",
+  "active": "453623b80f591664",
   "lastOpenFiles": [
-    "综合行列式.md",
     "求解PA=B.md",
+    "Untitled.md",
+    "综合行列式.md",
     "Linear Algebra/分解为两个行列式之和.md",
     "线性代数期末考试范围.md",
     "大胆预测.md",
@@ -246,7 +261,6 @@
     "Calculus/Stokes；Flux 表述；哪个是正向的.md",
     "Calculus/隐函数求导.md",
     "Calculus/参数化曲面的面积与积分.md",
-    "Calculus/梯度法 vs. 参数法.md",
     "Calculus/Untitled",
     "Calculus/Pasted image 20250620215346.png",
     "Pasted image 20250620214304.png",
