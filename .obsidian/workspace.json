@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "综合行列式.md",
+                "file": "求解PA=B.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "综合行列式"
+              "title": "求解PA=B"
             }
           },
           {
@@ -219,8 +219,8 @@
   },
   "active": "a50edbc6a3846be1",
   "lastOpenFiles": [
-    "求解PA=B.md",
     "综合行列式.md",
+    "求解PA=B.md",
     "Linear Algebra/分解为两个行列式之和.md",
     "线性代数期末考试范围.md",
     "大胆预测.md",
