@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "a50edbc6a3846be1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
+          },
+          {
             "id": "79ba59de768a3059",
             "type": "leaf",
             "state": {
@@ -46,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -203,11 +217,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc38733ed6daaf72",
+  "active": "a50edbc6a3846be1",
   "lastOpenFiles": [
+    "线性代数期末考试范围.md",
+    "Untitled.md",
     "大胆预测.md",
     "求解PA=B.md",
-    "线性代数期末考试范围.md",
     "LA Final Predict",
     "Linear Algebra/终极解析—二次型与对称矩阵对角化.md",
     "Linear Algebra/线性代数期末复习指南.md",
@@ -232,7 +247,6 @@
     "Calculus/隐函数求导.md",
     "Calculus/参数化曲面的面积与积分.md",
     "Calculus/梯度法 vs. 参数法.md",
-    "Calculus/曲面积分.md",
     "Calculus/Untitled",
     "Calculus/Pasted image 20250620215346.png",
     "Pasted image 20250620214304.png",
