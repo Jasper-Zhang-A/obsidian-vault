@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c2cea5d2fe823c20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LA Final Predict/线性代数期末考试范围.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "线性代数期末考试范围"
-            }
-          },
-          {
             "id": "e57560876341959c",
             "type": "leaf",
             "state": {
@@ -72,51 +58,9 @@
               "icon": "lucide-git-fork",
               "title": "Graph view"
             }
-          },
-          {
-            "id": "1d7b5b7bc1003759",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linear Algebra/分解为两个行列式之和.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "分解为两个行列式之和"
-            }
-          },
-          {
-            "id": "3591bef38f94cdee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "终极解析—二次型与对称矩阵对角化.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "终极解析—二次型与对称矩阵对角化"
-            }
-          },
-          {
-            "id": "e04d85840a033a0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "求对称矩阵的正交对角化.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "求对称矩阵的正交对角化"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -173,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -276,8 +221,8 @@
   "active": "dc38733ed6daaf72",
   "lastOpenFiles": [
     "大胆预测.md",
-    "Untitled.md",
     "LA Final Predict/线性代数期末考试范围.md",
+    "Untitled.md",
     "LA Final Predict",
     "Linear Algebra/终极解析—二次型与对称矩阵对角化.md",
     "Linear Algebra/线性代数期末复习指南.md",
