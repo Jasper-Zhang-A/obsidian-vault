@@ -67,6 +67,26 @@
             "id": "607128d399a67834",
             "type": "leaf",
             "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "cab7e7c20baf37e8",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "0298e3f571ac4d1a",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "Untitled.md",
@@ -116,7 +136,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -173,7 +193,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -273,28 +294,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "607128d399a67834",
+  "active": "0298e3f571ac4d1a",
   "lastOpenFiles": [
-    "ccw/2024年.md",
     "Untitled.md",
-    "反证大法好.md",
-    "大胆预测.md",
-    "综合行列式.md",
-    "求解PA=B.md",
-    "打败学生最简单的方法就是增加计算量.md",
-    "ccw",
-    "Linear Algebra1st-Round Review/终极解析—二次型与对称矩阵对角化.md",
-    "Linear Algebra1st-Round Review/正交性、对称矩阵与二次型.md",
-    "Linear Algebra/分解为两个行列式之和.md",
-    "Wuke LA Final Predict & Linear Algebra 2nd-Round Review",
-    "Linear Algebra1st-Round Review/线性代数期末复习指南.md",
+    "思想道德与法治",
+    "Linear Algebra/大汇总.md",
+    "Linear Algebra",
+    "Linear Algebra/Wuke LA Final Predict & Linear Algebra 2nd-Round Review/大胆预测.md",
+    "Linear Algebra/Linear Algebra1st-Round Review/线性代数期末复习指南.md",
     "Linear Algebra1st-Round Review/大总结.md",
-    "Linear Algebra1st-Round Review/求对称矩阵的正交对角化.md",
+    "Linear Algebra/Linear Algebra1st-Round Review/反证大法好.md",
+    "ccw/2024年.md",
+    "Linear Algebra/Wuke LA Final Predict & Linear Algebra 2nd-Round Review/综合行列式.md",
+    "Linear Algebra/Wuke LA Final Predict & Linear Algebra 2nd-Round Review/求解PA=B.md",
+    "Linear Algebra/Wuke LA Final Predict & Linear Algebra 2nd-Round Review/打败学生最简单的方法就是增加计算量.md",
+    "ccw",
+    "Linear Algebra/Linear Algebra1st-Round Review/终极解析—二次型与对称矩阵对角化.md",
+    "Linear Algebra/Linear Algebra1st-Round Review/正交性、对称矩阵与二次型.md",
+    "Linear Algebra/分解为两个行列式之和.md",
+    "Linear Algebra/Wuke LA Final Predict & Linear Algebra 2nd-Round Review",
+    "Linear Algebra/Linear Algebra1st-Round Review/求对称矩阵的正交对角化.md",
     "二次型化标准形.md",
     "Calculus/链式法则.md",
-    "Linear Algebra1st-Round Review/正交投影计算.md",
+    "Linear Algebra/Linear Algebra1st-Round Review/正交投影计算.md",
     "Calculus/格林、高斯、斯托克斯、闭合通量、旋度.md",
-    "Linear Algebra1st-Round Review",
+    "Linear Algebra/Linear Algebra1st-Round Review",
     "Calculus/梯度.md",
     "Calculus/大总结.md",
     "Calculus/Lagrange Multipliers.md",
@@ -303,7 +327,6 @@
     "Calculus/吴柯.md",
     "Calculus/Case Study-Flux.md",
     "Calculus/取正还是取负.md",
-    "Calculus/Stokes；Flux 表述；哪个是正向的.md",
     "Calculus/Untitled",
     "Calculus/Pasted image 20250620215346.png",
     "Pasted image 20250620214304.png",
