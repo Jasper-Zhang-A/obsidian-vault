@@ -169,7 +169,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -299,10 +300,10 @@
           }
         ],
         "direction": "vertical",
-        "x": 1234,
-        "y": 28,
-        "width": 600,
-        "height": 992,
+        "x": 960,
+        "y": 0,
+        "width": 960,
+        "height": 1032,
         "maximize": false,
         "zoom": 0
       }
