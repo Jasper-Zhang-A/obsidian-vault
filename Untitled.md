@@ -99,3 +99,144 @@
   - 所以，根据 Pauta 准则，**不能**将 $L_{10}$ 作为坏值剔除。
 - **示例启示**：这个例子恰好说明了当测量次数较少时（$n=10$），即使某个数据看起来非常“可疑”，Pauta准则也可能因为样本标准差过大而无法将其剔除，这印证了其在小样本量下的局限性。
 
+
+## 直接测量的不确定度计算 (Calculations of Uncertainty in Direct Measurement)
+
+对于直接测量的物理量，其总不确定度由A类不确定度和B类不确定度共同合成。
+
+### 1. A类不确定度 ($u_A$)
+
+- **来源**：来源于测量过程中的随机效应，通过对多次重复测量的数据进行**统计分析**来评定。
+- **计算方法**：A类不确定度在数值上等于**算术平均值的标准偏差** ($S_{\overline{N}}$)。
+- **公式**：
+  $$ u_A = S_{\overline{N}} = \sqrt{\frac{\sum_{i=1}^{n}(N_i - \overline{N})^2}{n(n-1)}} $$
+  其中：
+  - $N_i$ 是第 $i$ 次的测量值。
+  - $\overline{N}$ 是所有 $n$ 次测量的算术平均值。
+  - $n$ 是总的测量次数。
+
+### 2. B类不确定度 ($u_B$)
+
+- **来源**：来源于非统计的因素，通常基于以往的经验、仪器说明书、校准证书等信息来评定。它主要包括**仪器误差**和**读数误差**。
+- **计算方法**：假设误差源是均匀分布（或称矩形分布），其不确定度分量等于误差半宽度除以 $\sqrt{3}$。
+- **公式**：
+  - **仪器误差引入的不确定度** ($u_{\Delta_{ins}}$):
+    $$ u_{\Delta_{ins}} = \frac{\Delta_{ins}}{\sqrt{3}} $$
+    其中 $\Delta_{ins}$ 是仪器的最大允许误差或误差限。
+  - **读数误差引入的不确定度** ($u_{\Delta_{read}}$):
+    $$ u_{\Delta_{read}} = \frac{\Delta_{read}}{\sqrt{3}} $$
+    其中 $\Delta_{read}$ 是估读引入的误差限。
+  - **B类不确定度合成**：
+    $$ u_B = \sqrt{u_{\Delta_{ins}}^2 + u_{\Delta_{read}}^2} $$
+
+### 3. 合成不确定度 ($\sigma$)
+
+- **定义**：直接测量的总不确定度，是A类和B类不确定度的合成。
+- **公式**：
+  $$ \sigma = \sqrt{u_A^2 + u_B^2} = \sqrt{u_A^2 + u_{\Delta_{ins}}^2 + u_{\Delta_{read}}^2} $$
+- **简化原则**：在计算合成不确定度时，如果某一个不确定度分量（$u_A$ 或 $u_B$ 的某个分量）远小于其他分量（例如，小于最大分量的 **1/3**），则其平方项（小于最大分量平方的1/10）可以忽略不计，以简化计算。但这并不意味着该项误差不存在。
+
+
+
+
+
+
+
+
+## 仪器误差的确定 (Determining Instrument Errors)
+
+仪器误差 ($\Delta_{ins}$) 是B类不确定度的核心来源之一。根据仪器的不同，其误差限的确定方式可分为以下四类。
+
+---
+
+### 1. 根据仪器上的标志确定 (Labeling on the instrument)
+
+这类仪器通常将最小分度或分辨率直接标注在仪器上，其误差与此标志直接相关。
+
+- **示例：游标卡尺 (Vernier Caliper)**
+  - **20分度卡尺**: 仪器上标志最小分度为 **0.05mm**。因此，其仪器误差限 $\Delta_{ins} = 0.05 \text{ mm}$。游标卡尺读数是确定的，无估读过程，因此读数误差 $\Delta_{read}=0$。
+  - **50分度卡尺**: 仪器上标志最小分度为 **0.02mm**。因此，其仪器误差限 $\Delta_{ins} = 0.02 \text{ mm}$。同样，读数误差 $\Delta_{read}=0$。
+
+---
+
+### 2. 根据仪器准确度等级确定 (Label accuracy class)
+
+这类仪器在表盘或铭牌上标有准确度等级，如0.1、0.5级等。
+
+- **示例 1：指针式仪表 (Pointer Meter)**
+  - **公式**: $\Delta_{ins} = \text{Range} \times \text{Level}\%$
+  - **电流表 (Ammeter)**: 0.5级，使用30mA量程。
+    - **仪器误差**: $\Delta_{ins} = 30 \text{ mA} \times 0.5\% = 0.15 \text{ mA}$
+    - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.08 \text{ mA}$
+  - **电压表 (Voltmeter)**: 0.1级，使用7.5V量程。
+    - **仪器误差**: $\Delta_{ins} = 7.5 \text{ V} \times 0.1\% = 0.0075 \text{ V}$
+    - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.002 \text{ V}$
+
+- **示例 2：电阻箱 (Resistance Box)**
+  - **公式**: $\Delta_{ins} = \text{Measured Value} \times \text{Level}\%$
+  - **条件**: 0.1级，读数值为 2700Ω。
+  - **仪器误差**: $\Delta_{ins} = 2700 \Omega \times 0.1\% = 2.7 \Omega$
+  - **读数误差**: $\Delta_{read}=0$。
+
+---
+
+### 3. 根据仪器说明书或检定规程确定 (Implied or instructions labeling)
+
+许多精密仪器的误差限会在其配套的说明书或相关的检定规程中给出。
+
+- **示例 1：普通刻度尺 (Ruler)**
+  - **条件**: 最小分度为 0.5mm。
+  - **仪器误差**: $\Delta_{ins} = 0.5 \text{ mm}$
+  - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.1 \text{ mm}$
+
+- **示例 2：钢卷尺 (Steel Tape - GB level two)**
+  - **条件**: 最小分度 1mm，误差公式遵循国家标准 (GB)。
+  - **仪器误差**: $\Delta_{ins} = (0.2 \cdot L + 0.3) \text{ mm}$ (其中L为测量长度，单位m)。
+    - 当 L=0.5m, $\Delta_{ins} = 0.4 \text{ mm}$
+    - 当 L=1.5m, $\Delta_{ins} = 0.6 \text{ mm}$
+    - 当 L=5m, $\Delta_{ins} = 1.3 \text{ mm}$
+  - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.2 \text{ mm}$
+
+- **示例 3：数字万用表 (Digital Multimeter - DT920)**
+  - **条件**: 准确度由公式给出，如 `±(0.8% read + 2 digits)`。测量值为 408V 时。
+  - **仪器误差**: $\Delta_{ins} = 0.8\% \times 408 + 2 = 3.3 + 2 = 5.3 \text{ V}$
+  - **读数误差**: $\Delta_{read}=0$ (数值是确定的)。
+
+- **示例 4：螺旋测微器 (Micrometer Screw)**
+  - **条件**: 最小分度 0.01mm。
+  - **仪器误差 (据说明书)**: $\Delta_{ins} = 0.005 \text{ mm}$
+  - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.002 \text{ mm}$
+
+- **示例 5：读数显微镜 (Shift Microscope)**
+  - **条件**: 最小分度 0.01mm。
+  - **仪器误差 (据说明书)**: $\Delta_{ins} = 0.01 \text{ mm}$
+  - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.002 \text{ mm}$
+
+- **示例 6：迈克尔逊干涉仪 (Michelson Interferometer)**
+  - **条件**: 最小分度 0.0001mm。
+  - **仪器误差 (据说明书)**: $\Delta_{ins} = 0.0001 \text{ mm}$
+  - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.00002 \text{ mm}$
+
+---
+
+### 4. 根据经验估计确定 (Instrument error estimation)
+
+在仪器未明确给出误差信息的情况下，可根据仪器类型进行估计。
+
+- **a. 连续读数仪器 (Continuous reading instruments)**
+  - **规则**: 仪器误差限 $\Delta_{ins}$ 估计为**最小分度值的一半**。
+  - **示例 (刻度尺 Ruler)**:
+    - **条件**: 最小分度 1mm。
+    - **仪器误差**: $\Delta_{ins} = 0.5 \times \text{scale} = 0.5 \text{ mm}$
+    - **读数误差**: $\Delta_{read} = 0.2 \times \text{scale} = 0.2 \text{ mm}$
+
+- **b. 非连续读数仪器 (Discontinuous reading instruments)**
+  - **规则**: 仪器误差限 $\Delta_{ins}$ 估计为**一个最小分度值**。
+  - **示例 1 (数字秒表 Digital Stopwatch)**:
+    - **条件**: 最小分度 0.01s。
+    - **仪器误差**: $\Delta_{ins} = \text{minimum scale} = 0.01 \text{ s}$
+    - **读数误差**: $\Delta_{read}=0$。
+  - **示例 2 (分光计 Spectrometer)**:
+    - **条件**: 最小分度 1' (1角分)。
+    - **仪器误差**: $\Delta_{ins} = \text{minimum scale} = 1'$
+    - **读数误差**: $\Delta_{read}=0$。
