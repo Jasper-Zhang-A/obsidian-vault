@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "笔记要点.md",
+                "file": "思想道德与法治/要点.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "笔记要点"
+              "title": "要点"
             }
           },
           {
@@ -126,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -229,9 +228,9 @@
   },
   "active": "607128d399a67834",
   "lastOpenFiles": [
+    "思想道德与法治/笔记要点.md",
     "思想道德与法治/要点.md",
-    "笔记要点整理.md",
-    "笔记要点.md",
+    "思想道德与法治/笔记要点整理.md",
     "AI Prompt/Gemini CLI vs. Gemini 网页版.md",
     "备份.md",
     "Pasted image 20250625163426.png",
