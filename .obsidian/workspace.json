@@ -22,34 +22,6 @@
             }
           },
           {
-            "id": "57742583df32f443",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "思想道德与法治/要点.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "要点"
-            }
-          },
-          {
-            "id": "b9e8cc3fec9c3b11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "思想道德与法治/要点.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "要点"
-            }
-          },
-          {
             "id": "cab7e7c20baf37e8",
             "type": "leaf",
             "state": {
@@ -57,20 +29,6 @@
               "state": {},
               "icon": "lucide-git-fork",
               "title": "Graph view"
-            }
-          },
-          {
-            "id": "0298e3f571ac4d1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "思想道德与法治/要点.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "要点"
             }
           },
           {
@@ -111,8 +69,7 @@
               "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -270,10 +226,49 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9e8cc3fec9c3b11",
+  "floating": {
+    "id": "3f5396e24e7667ac",
+    "type": "floating",
+    "children": [
+      {
+        "id": "42dae38c3f6847b4",
+        "type": "window",
+        "children": [
+          {
+            "id": "b64433aec6cee852",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "0298e3f571ac4d1a",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "笔记要点.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "笔记要点"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 960,
+        "y": 516,
+        "width": 960,
+        "height": 516,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "0298e3f571ac4d1a",
   "lastOpenFiles": [
-    "笔记要点.md",
     "思想道德与法治/要点.md",
+    "笔记要点.md",
     "Gemini CLI vs. Gemini 网页版.md",
     "备份.md",
     "Pasted image 20250625163426.png",
