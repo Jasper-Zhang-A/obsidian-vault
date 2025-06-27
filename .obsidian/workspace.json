@@ -126,7 +126,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "cee6ca11dee60f70",
@@ -257,19 +258,19 @@
         ],
         "direction": "vertical",
         "x": 960,
-        "y": 516,
+        "y": 0,
         "width": 960,
-        "height": 516,
+        "height": 1032,
         "maximize": false,
         "zoom": 0
       }
     ]
   },
-  "active": "607128d399a67834",
+  "active": "0298e3f571ac4d1a",
   "lastOpenFiles": [
-    "笔记要点.md",
     "思想道德与法治/要点.md",
-    "Gemini CLI vs. Gemini 网页版.md",
+    "笔记要点.md",
+    "AI Prompt/Gemini CLI vs. Gemini 网页版.md",
     "备份.md",
     "Pasted image 20250625163426.png",
     "思想道德与法治",
