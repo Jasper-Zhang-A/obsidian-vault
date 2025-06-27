@@ -50,10 +50,17 @@
     $$ \text{Accuracy} = \text{Precision} + \text{Trueness} $$
   - **表现**：一组弹孔既要**集中**（高精密度），又要**靠近靶心**（高正确度），才能被称为高准确度。
 
-| Limited measure                                       | Infinite measure    |            |
-| ----------------------------------------------------- | ------------------- | ---------- |
-| $N = \frac{1}{m}\sum_{i = 1}^{m}N_{i} = \overline{N}$ | near the true value | true value |
-| $\Delta N_{i} = N_{i} - \overline{N}$                 | deviation           | error      |
+|                                                       | Limited measure     | Infinite measure |
+| ----------------------------------------------------- | ------------------- | ---------------- |
+| $N = \frac{1}{m}\sum_{i = 1}^{m}N_{i} = \overline{N}$ | near the true value | true value       |
+| $\Delta N_{i} = N_{i} - \overline{N}$                 | deviation           | error            |
 
 (三) Estimation error standard deviation
 
+ 
+| Multiple measure | standard deviation random measurement                                                     | standard deviation of mean value                                                                             |
+| ---------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Equation         | $S = \sqrt{\frac{\sum_{i = 1}^{n}(N_{i} - \overline{N})^{2}}{n - 1}}$ （Degree of freedom） | $S_{\overline{N}} = \frac{S}{\sqrt{n}} = \sqrt{\frac{\sum_{i = 1}^{n}(N_{i} - \overline{N})^{2}}{n(n - 1)}}$ |
+| Meaning          | Dispersion of each measurement                                                            | Deviation between mean value and true value                                                                  |
+| n increase       | Changes slowly                                                                            | Fast Convergence                                                                                             |
+| Purposes         | （Excluding bad value）                                                                     | Reduce accidental error                                                                                      |
